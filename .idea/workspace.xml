@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f719151b-d5ea-4d44-8740-daf4ef28c8be" name="Default Changelist" comment="" />
+    <list default="true" id="f719151b-d5ea-4d44-8740-daf4ef28c8be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ART.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/JoinManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/ReactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/courtbot/BotMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/BotMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/courtbot/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/courtbot/CustomManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/CustomManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/courtbot/PermissionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/PermissionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/courtbot/PrivateMessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/PrivateMessageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/courtbot/RolesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/RolesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/courtbot/TicketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/courtbot/TicketManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/art/courtbot/BotMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/art/courtbot/BotMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/art/courtbot/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/art/courtbot/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/art/courtbot/CustomManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/art/courtbot/CustomManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/art/courtbot/PermissionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/art/courtbot/PermissionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/art/courtbot/PrivateMessageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/art/courtbot/PrivateMessageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/art/courtbot/RolesManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/art/courtbot/RolesManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/art/courtbot/TicketManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/art/courtbot/TicketManager.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +51,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Discoedot" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15304948" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -70,6 +93,14 @@
       <option name="presentableId" value="Default" />
       <updated>1595181995367</updated>
     </task>
+    <task id="LOCAL-00001" summary="NotificationFunctions">
+      <created>1595356387447</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595356387448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,10 +108,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="NotificationFunctions" />
+    <option name="LAST_COMMIT_MESSAGE" value="NotificationFunctions" />
   </component>
 </project>

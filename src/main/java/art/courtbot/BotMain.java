@@ -6,20 +6,18 @@ import net.dv8tion.jda.api.entities.Activity;
 
 public class BotMain {
     public static void main(String[] args) throws Exception {
+        ConnectionManager connectionManager = new ConnectionManager();
+        connectionManager.onBdCreate();
         RolesManager rolesManager = new RolesManager();
+        TicketManager ticketManager = new TicketManager();
+        ReactionManager reactionManager = new ReactionManager(ticketManager);
         String active = "BSTeam - discord.gg/xp2KrvD";
-        JDA jda = new JDABuilder("NzM0NDc0MzY2NDYwNDkzODQ1.XxSQWg.r8mebp-etcKpXvG0pGU9UxEUOyQ")
-//                .addEventListeners(new MessageHandler())
-//                // .addEventListeners(new RR())
-//                .addEventListeners(new DyntaxCode())
-//                // .addEventListeners(new CreateChannel())
-//                .addEventListeners(new ShopMiniGames())
-//                .addEventListeners(new RrMiniGames())
-//                .addEventListeners(new CasinoRouletteMiniGames())
-//                .addEventListeners(new Blitz())
+        JDA jda = new JDABuilder(".Xxc4qg.ASs0G7EhrtDRPPUyw-7jEFk-LtA")
                 .addEventListeners(rolesManager)
-                .addEventListeners(new CommandManager(rolesManager))
+                .addEventListeners(new CommandManager(connectionManager, reactionManager, ticketManager))
                 .addEventListeners(new PrivateMessageManager())
+                .addEventListeners(reactionManager)
+                .addEventListeners(new JoinManager(connectionManager))
                 .setActivity(Activity.playing(active))
                 .build();
 

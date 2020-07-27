@@ -1,11 +1,11 @@
 package art.courtbot;
 
 import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.GuildChannel;
 import net.dv8tion.jda.api.entities.Member;
-import net.dv8tion.jda.api.entities.TextChannel;
 
 public class PermissionManager {
-    public void getPermissions(TextChannel textChannel, Member member, Permission permission) {
+    public void getPermissions(GuildChannel textChannel, Member member, Permission permission) {
 
         textChannel.createPermissionOverride(member)
                 .setAllow(permission)
@@ -15,13 +15,13 @@ public class PermissionManager {
                 + member.getEffectiveName() + " на канал" + textChannel.getName());
     }
 
-    public void removePermissions(TextChannel textChannel, Member member, Permission permission) {
-        textChannel.createPermissionOverride(member)
+    public void removePermissions(GuildChannel guildChannel, Member member, Permission permission) {
+        guildChannel.createPermissionOverride(member)
                 .setDeny(permission).queue();
 
 
 
         System.out.println("PermissionManager:getPermission() -- право " + permission.getName() + " было успешно удалено у юзера "
-                + member.getEffectiveName() + " на канал" + textChannel.getName());
+                + member.getEffectiveName() + " на канал" + guildChannel.getName());
     }
 }
